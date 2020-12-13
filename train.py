@@ -27,6 +27,9 @@ class TrainLogger(object):
             f.write(s)
 
 def read_batches(T, vocab_size):
+    """
+    Helper Function that generated batches of input for training
+    """
     length = T.shape[0]; #129,665
     batch_chars = int(length / BATCH_SIZE); # 8,104
 
